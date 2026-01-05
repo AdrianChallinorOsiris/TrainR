@@ -1,0 +1,8 @@
+[package]
+name = "train"
+version = "0.1.0"
+edition = "2024"
+authors = "Adrian Challinor <adrian.challinor@osiris.co.uk>"
+description = "Train low level device interface"
+
+[dependencies]
