@@ -1,0 +1,12 @@
+[build]
+target-dir = "target"
+
+# Cross-compilation configuration for Raspberry Pi
+# For Raspberry Pi 1, 2, 3, Zero (32-bit): arm-unknown-linux-gnueabihf
+# For Raspberry Pi 4, 5 (64-bit): aarch64-unknown-linux-gnu
+
+[target.arm-unknown-linux-gnueabihf]
+linker = "arm-linux-gnueabihf-gcc"
+
+[target.aarch64-unknown-linux-gnu]
+linker = "aarch64-linux-gnu-gcc"

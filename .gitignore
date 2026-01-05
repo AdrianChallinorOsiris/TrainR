@@ -20,3 +20,7 @@
 
 # Documentation build
 /doc/
+
+# Cross-compilation artifacts
+*.o
+*.a

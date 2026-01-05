@@ -2,7 +2,31 @@
 name = "train"
 version = "0.1.0"
 edition = "2024"
-authors = "Adrian Challinor <adrian.challinor@osiris.co.uk>"
+authors = ["Adrian Challinor <adrian.challinor@osiris.co.uk>"]
 description = "Train low level device interface"
 
 [dependencies]
+# GPIO interface for Raspberry Pi (Linux GPIO character device)
+gpio-cdev = "0.6"
+
+# Error handling
+anyhow = "1.0"
+thiserror = "1.0"
+
+# Async runtime (optional, for future async operations)
+tokio = { version = "1", features = ["full"] }
+
+# Command-line argument parsing
+clap = { version = "4", features = ["derive"] }
+
+# Web server framework
+axum = "0.7"
+tower = "0.4"
+tower-http = { version = "0.5", features = ["cors", "fs"] }
+
+# JSON serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Random number generation
+rand = "0.8"
